@@ -5,6 +5,9 @@ export const postsSlug = 'posts';
 
 export const PostsCollection: CollectionConfig = {
   slug: postsSlug,
+  access: {
+    read: () => true,
+  },
   fields: [
     {
       name: 'text',
